@@ -103,3 +103,23 @@ function showToast(title, message) {
     cForm.classList.remove('was-validated');
   });
 })();
+
+// Cookie consent banner
+(function () {
+  const banner = document.getElementById('cookieBanner');
+  if (!banner) return;
+  const key = 'cm_cookie_consent';
+  const choice = localStorage.getItem(key);
+  if (!choice) {
+    banner.classList.remove('d-none');
+  }
+  const acceptBtn = document.getElementById('cookieAccept');
+  const declineBtn = document.getElementById('cookieDecline');
+  const close = (val) => {
+    try { localStorage.setItem(key, val); } catch (_) {}
+    banner.classList.add('d-none');
+    showToast('Preferences saved', val === 'accepted' ? 'Thanks for accepting essential cookies.' : 'You declined optional cookies.');
+  };
+  if (acceptBtn) acceptBtn.addEventListener('click', () => close('accepted'));
+  if (declineBtn) declineBtn.addEventListener('click', () => close('declined'));
+})();
