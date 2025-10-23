@@ -35,6 +35,8 @@
   border-radius: 50%;
 }
 
+.pb-6 { padding-bottom: 6rem; }
+
 .section-anchor-fix,
 section[id] {
   scroll-margin-top: 5rem;
@@ -64,4 +66,24 @@ section[id] {
 .card-lion .card-header {
   background-color: var(--bs-primary);
   color: #fff;
+}
+
+/* Ensure pricing cards are always equal height */
+#pricing .row > .col { display: flex; }
+#pricing .card { display: flex; flex-direction: column; width: 100%; }
+#pricing .card-body { display: flex; flex-direction: column; height: 100%; }
+#pricing .card .btn:last-child { margin-top: auto; }
+
+/* Sign-up modal theming to match site tone */
+.modal-signup .modal-header {
+  background: var(--bs-primary);
+  color: #fff;
+}
+.modal-signup .modal-content {
+  border: 1px solid rgba(var(--bs-primary-rgb), 0.25);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08);
+}
+.modal-signup .form-control:focus, .modal-signup .form-select:focus {
+  border-color: rgba(var(--bs-primary-rgb), 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
 }
