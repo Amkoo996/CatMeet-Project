@@ -40,7 +40,7 @@
   </script>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90">
 
   <nav id="mainNav" class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm fixed-top">
     <div class="container">
@@ -71,20 +71,20 @@
       <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
         <div class="col-12 col-sm-10 col-lg-6 d-flex justify-content-center">
           <img src="./images/cat.png" class="d-block mx-auto img-fluid" alt="Cat photo hero"
-            loading="lazy">
+            loading="lazy" decoding="async" fetchpriority="high">
         </div>
         <div class="col-lg-6 text-center text-lg-start">
           <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Find your cat's purrfect playmate.</h1>
 
           <div class="d-grid gap-2 d-md-flex justify-content-center justify-content-lg-start">
-            <a href="#pricing" class="btn btn-primary btn-lg px-4 me-md-2"><svg xmlns="http://www.w3.org/2000/svg"
+            <a href="#pricing" class="btn btn-primary btn-lg px-4 me-md-2"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
                 width="16" height="16" fill="currentColor" class="bi bi-apple mb-1" viewBox="0 0 16 16">
                 <path
                   d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
                 <path
                   d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
               </svg> Download</a>
-            <a href="#pricing" class="btn btn-outline-secondary btn-lg px-4"><svg xmlns="http://www.w3.org/2000/svg"
+            <a href="#pricing" class="btn btn-outline-secondary btn-lg px-4"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
                 width="16" height="16" fill="currentColor" class="bi bi-google-play mb-1" viewBox="0 0 16 16">
                 <path
                   d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z" />
@@ -101,7 +101,7 @@
         <div class="col d-flex align-items-start">
           <div
             class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-            <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor" class="bi bi-check2-circle"
+            <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor" class="bi bi-check2-circle" aria-hidden="true" focusable="false"
               viewBox="0 0 16 16">
               <path
                 d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
@@ -118,7 +118,7 @@
         <div class="col d-flex align-items-start">
           <div
             class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-            <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor" class="bi bi-mortarboard"
+            <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor" class="bi bi-mortarboard" aria-hidden="true" focusable="false"
               viewBox="0 0 16 16">
               <path
                 d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z" />
@@ -135,7 +135,7 @@
         <div class="col d-flex align-items-start">
           <div
             class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-            <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor" class="bi bi-arrow-through-heart"
+            <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor" class="bi bi-arrow-through-heart" aria-hidden="true" focusable="false"
               viewBox="0 0 16 16">
               <path fill-rule="evenodd"
                 d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l.53-.53c-.771-.802-1.328-1.58-1.704-2.32-.798-1.575-.775-2.996-.213-4.092C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182a21.86 21.86 0 0 1-2.685-2.062l-.539.54V14a.5.5 0 0 1-.146.354l-1.5 1.5Zm2.893-4.894A20.419 20.419 0 0 0 8 12.71c2.456-1.666 3.827-3.207 4.489-4.512.679-1.34.607-2.42.215-3.185-.817-1.595-3.087-2.054-4.346-.761L8 4.62l-.358-.368c-1.259-1.293-3.53-.834-4.346.761-.392.766-.464 1.845.215 3.185.323.636.815 1.33 1.519 2.065l1.866-1.867a.5.5 0 1 1 .708.708L5.747 10.96Z" />
@@ -255,19 +255,19 @@
             <div class="mb-3">
               <label for="fullName" class="form-label">Full name</label>
               <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Whiskers McFluff" required>
-              <div class="invalid-feedback">Please enter your full name.</div>
+              <div class="invalid-feedback" role="alert">Please enter your full name.</div>
             </div>
 
             <div class="mb-3">
               <label for="username" class="form-label">Username</label>
               <input type="text" class="form-control" id="username" name="username" placeholder="whiskers" minlength="3" required>
-              <div class="invalid-feedback" id="usernameFeedback">Please choose a unique username (min 3 characters).</div>
+              <div class="invalid-feedback" id="usernameFeedback" role="alert">Please choose a unique username (min 3 characters).</div>
             </div>
 
             <div class="mb-3">
               <label for="email" class="form-label">Email address</label>
               <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
-              <div class="invalid-feedback">Please enter a valid email address.</div>
+              <div class="invalid-feedback" role="alert">Please enter a valid email address.</div>
             </div>
 
             <div class="mb-3">
@@ -285,13 +285,13 @@
                 </select>
                 <input type="tel" class="form-control" id="phone" name="phone" placeholder="555 123 4567" pattern="[0-9\s\-]+" required>
               </div>
-              <div class="invalid-feedback d-block">Please choose a country code and enter your phone number.</div>
+              <div class="invalid-feedback d-block" role="alert">Please choose a country code and enter your phone number.</div>
             </div>
 
             <div class="form-check mb-3">
               <input class="form-check-input" type="checkbox" value="1" id="notRobot" required>
               <label class="form-check-label" for="notRobot">I'm not a robot</label>
-              <div class="invalid-feedback">Please confirm you are not a robot.</div>
+              <div class="invalid-feedback" role="alert">Please confirm you are not a robot.</div>
             </div>
 
             <div class="d-grid">
@@ -317,7 +317,7 @@
             <div class="mb-3">
               <label for="gsEmail" class="form-label">Email address</label>
               <input type="email" class="form-control" id="gsEmail" placeholder="you@example.com" required>
-              <div class="invalid-feedback">Please enter a valid email.</div>
+              <div class="invalid-feedback" role="alert">Please enter a valid email.</div>
             </div>
             <div class="form-check mb-3">
               <input class="form-check-input" type="checkbox" id="gsAgree" required>
@@ -347,7 +347,7 @@
             <div class="mb-3">
               <label for="cfName" class="form-label">Full name</label>
               <input type="text" class="form-control" id="cfName" placeholder="Your name" required>
-              <div class="invalid-feedback">Please enter your name.</div>
+              <div class="invalid-feedback" role="alert">Please enter your name.</div>
             </div>
             <div class="mb-3">
               <label for="cfEmail" class="form-label">Email address</label>
@@ -357,7 +357,7 @@
             <div class="mb-3">
               <label for="cfMsg" class="form-label">Message</label>
               <textarea class="form-control" id="cfMsg" rows="4" placeholder="How can we help?" required></textarea>
-              <div class="invalid-feedback">Please enter a message.</div>
+              <div class="invalid-feedback" role="alert">Please enter a message.</div>
             </div>
             <div class="d-grid">
               <button class="btn btn-primary btn-lg" type="submit">Send message</button>
@@ -420,96 +420,7 @@
     crossorigin="anonymous"></script>
   <!-- Toast container -->
   <div class="toast-container" aria-live="polite" aria-atomic="true"></div>
-  <script>
-    (() => {
-      // Helpers
-      const showToast = (title, message) => {
-        const container = document.querySelector('.toast-container');
-        const toastEl = document.createElement('div');
-        toastEl.className = 'toast align-items-center text-bg-primary border-0';
-        toastEl.setAttribute('role', 'status');
-        toastEl.setAttribute('aria-live', 'polite');
-        toastEl.setAttribute('aria-atomic', 'true');
-        toastEl.innerHTML = `
-          <div class="d-flex">
-            <div class="toast-body">
-              <strong>${title}:</strong> ${message}
-            </div>
-            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-          </div>`;
-        container.appendChild(toastEl);
-        const toast = new bootstrap.Toast(toastEl, { delay: 3000 });
-        toast.show();
-        toastEl.addEventListener('hidden.bs.toast', () => toastEl.remove());
-      };
-
-      // Signup modal validation + username uniqueness (client-side)
-      const signupForm = document.getElementById('signupForm');
-      if (signupForm) {
-        const usernameInput = document.getElementById('username');
-        const usernameFeedback = document.getElementById('usernameFeedback');
-        const getUsernames = () => JSON.parse(localStorage.getItem('cm_usernames') || '[]');
-        const saveUsernames = (arr) => localStorage.setItem('cm_usernames', JSON.stringify(arr));
-        signupForm.addEventListener('submit', (e) => {
-          e.preventDefault();
-          e.stopPropagation();
-          let valid = signupForm.checkValidity();
-          const existing = getUsernames();
-          const name = (usernameInput.value || '').trim().toLowerCase();
-          if (name.length >= 3 && existing.includes(name)) {
-            valid = false;
-            usernameInput.classList.add('is-invalid');
-            usernameFeedback.textContent = 'This username is already taken. Please choose another.';
-          }
-          if (!valid) {
-            signupForm.classList.add('was-validated');
-            return;
-          }
-          existing.push(name);
-          saveUsernames(existing);
-          bootstrap.Modal.getOrCreateInstance(document.getElementById('signupModal')).hide();
-          showToast('Signed up', 'Account created successfully. Welcome to CatMeet!');
-          signupForm.reset();
-          signupForm.classList.remove('was-validated');
-        });
-        usernameInput.addEventListener('input', () => usernameInput.classList.remove('is-invalid'));
-      }
-
-      // Tomcat Get Started form
-      const gsForm = document.getElementById('getStartedForm');
-      if (gsForm) {
-        gsForm.addEventListener('submit', (e) => {
-          e.preventDefault();
-          e.stopPropagation();
-          if (!gsForm.checkValidity()) {
-            gsForm.classList.add('was-validated');
-            return;
-          }
-          bootstrap.Modal.getOrCreateInstance(document.getElementById('getStartedModal')).hide();
-          showToast('Tomcat', 'We\'ll email you steps to get started.');
-          gsForm.reset();
-          gsForm.classList.remove('was-validated');
-        });
-      }
-
-      // Lion Contact form
-      const cForm = document.getElementById('contactForm');
-      if (cForm) {
-        cForm.addEventListener('submit', (e) => {
-          e.preventDefault();
-          e.stopPropagation();
-          if (!cForm.checkValidity()) {
-            cForm.classList.add('was-validated');
-            return;
-          }
-          bootstrap.Modal.getOrCreateInstance(document.getElementById('contactModal')).hide();
-          showToast('Message sent', 'Our team will contact you shortly.');
-          cForm.reset();
-          cForm.classList.remove('was-validated');
-        });
-      }
-    })();
-  </script>
+  <script src="./js/main.js" defer></script>
 </body>
 
 </html>
