@@ -87,3 +87,22 @@ section[id] {
   border-color: rgba(var(--bs-primary-rgb), 0.5);
   box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
 }
+
+/* Global polish */
+html { scroll-behavior: smooth; }
+
+/* Navbar active + hover styling */
+#mainNav .nav-link.active { color: var(--bs-primary); font-weight: 600; }
+#mainNav .nav-link { position: relative; }
+#mainNav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: -0.3rem;
+  width: 0; height: 2px;
+  background: var(--bs-primary);
+  transition: width .2s ease;
+}
+#mainNav .nav-link:hover::after, #mainNav .nav-link.active::after { width: 100%; }
+
+/* Toast position */
+.toast-container { position: fixed; top: 5rem; right: 1rem; z-index: 1080; }
