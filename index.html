@@ -42,7 +42,7 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm fixed-top">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center gap-2" href="#title">
         <img src="./images/logo.png" alt="CatMeet logo" height="28">
@@ -53,12 +53,14 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto me-lg-3 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#title">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
           <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
+  
     </div>
   </nav>
 
@@ -154,7 +156,7 @@
       <div class="p-5 text-center bg-body-tertiary">
         <div class="container py-5">
           <h2 class="text-body-emphasis">"I no longer have to knock things off tables for attention. I found my favorite
-            nap buddy on TinCat. Meow."</h2>
+            nap buddy on CatMeet. Meow."</h2>
           <img class="profile-img mt-5" src="./images/cat-img.png" alt="Whiskers the cat">
           <p class="col-lg-8 mx-auto lead mt-2">
             Whiskers, New York
@@ -187,58 +189,119 @@
         <h2 class="display-4 fw-normal">Simple plans for every cat</h2>
         <p class="fs-5 text-body-secondary">Playful pricing for purrs, naps, and endless zoomies.</p>
       </div>
-      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-        <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm card-kitten">
+      <div class="row row-cols-1 row-cols-md-3 g-4 align-items-stretch mb-3 text-center">
+        <div class="col d-flex align-items-stretch">
+          <div class="card mb-4 rounded-3 shadow-sm card-kitten flex-fill d-flex flex-column">
             <div class="card-header py-3">
               <h4 class="my-0 fw-normal">Kitten</h4>
             </div>
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
               <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
               <ul class="list-unstyled mt-3 mb-4">
                 <li>3 Matches Per Day</li>
                 <li>5 Messages Per Day</li>
                 <li>Unlimited Purrs</li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-outline-dark">Sign up for free</button>
+              <button type="button" class="w-100 btn btn-lg btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#signupModal">Sign up for free</button>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm card-tomcat">
+        <div class="col d-flex align-items-stretch">
+          <div class="card mb-4 rounded-3 shadow-sm card-tomcat flex-fill d-flex flex-column">
             <div class="card-header py-3">
               <h4 class="my-0 fw-normal">Tomcat</h4>
             </div>
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
               <h1 class="card-title pricing-card-title">$10<small class="text-body-secondary fw-light">/mo</small></h1>
               <ul class="list-unstyled mt-3 mb-4">
                 <li>Unlimited Matches</li>
                 <li>Unlimited Messages</li>
                 <li>Priority Treats</li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-dark">Get started</button>
+              <button type="button" class="w-100 btn btn-lg btn-dark mt-auto">Get started</button>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm card-lion">
+        <div class="col d-flex align-items-stretch">
+          <div class="card mb-4 rounded-3 shadow-sm card-lion flex-fill d-flex flex-column">
             <div class="card-header py-3">
               <h4 class="my-0 fw-normal">Lion</h4>
             </div>
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
               <h1 class="card-title pricing-card-title">$19<small class="text-body-secondary fw-light">/mo</small></h1>
               <ul class="list-unstyled mt-3 mb-4">
                 <li>Front‑Page Spotlight</li>
                 <li>Unlimited Matches & Messages</li>
                 <li>VIP Lounge Access</li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-dark">Contact us</button>
+              <button type="button" class="w-100 btn btn-lg btn-primary mt-auto">Contact us</button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- Sign Up Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-signup">
+        <div class="modal-header text-white">
+          <h5 class="modal-title" id="signupModalLabel">Sign up</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-3 text-body-secondary">Join CatMeet to find new feline friends nearby.</p>
+          <form id="signupForm" class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Full name</label>
+              <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Whiskers McFluff" required>
+              <div class="invalid-feedback">Please enter your full name.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input type="text" class="form-control" id="username" name="username" placeholder="whiskers" minlength="3" required>
+              <div class="invalid-feedback" id="usernameFeedback">Please choose a unique username (min 3 characters).</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
+              <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Phone number</label>
+              <div class="input-group">
+                <select class="form-select" id="countryCode" name="countryCode" aria-label="Country code" required>
+                  <option value="" selected disabled>Code</option>
+                  <option value="+1">🇺🇸/🇨🇦 +1</option>
+                  <option value="+20">🇪🇬 +20</option>
+                  <option value="+44">🇬🇧 +44</option>
+                  <option value="+49">🇩🇪 +49</option>
+                  <option value="+61">🇦🇺 +61</option>
+                  <option value="+91">🇮🇳 +91</option>
+                  <option value="+971">🇦🇪 +971</option>
+                </select>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="555 123 4567" pattern="[0-9\s\-]+" required>
+              </div>
+              <div class="invalid-feedback d-block">Please choose a country code and enter your phone number.</div>
+            </div>
+
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="1" id="notRobot" required>
+              <label class="form-check-label" for="notRobot">I'm not a robot</label>
+              <div class="invalid-feedback">Please confirm you are not a robot.</div>
+            </div>
+
+            <div class="d-grid">
+              <button class="btn btn-primary btn-lg" type="submit">Create account</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Footer -->
   <section id="contact" class="gradient-background">
     <div class="container ">
@@ -290,6 +353,42 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
+  <script>
+    (() => {
+      const form = document.getElementById('signupForm');
+      if (!form) return;
+      const usernameInput = document.getElementById('username');
+      const usernameFeedback = document.getElementById('usernameFeedback');
+      const getUsernames = () => JSON.parse(localStorage.getItem('cm_usernames') || '[]');
+      const saveUsernames = (arr) => localStorage.setItem('cm_usernames', JSON.stringify(arr));
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        let valid = form.checkValidity();
+        const existing = getUsernames();
+        const name = (usernameInput.value || '').trim().toLowerCase();
+        if (name.length >= 3 && existing.includes(name)) {
+          valid = false;
+          usernameInput.classList.add('is-invalid');
+          usernameFeedback.textContent = 'This username is already taken. Please choose another.';
+        }
+        if (!valid) {
+          form.classList.add('was-validated');
+          return;
+        }
+        existing.push(name);
+        saveUsernames(existing);
+        const modalEl = document.getElementById('signupModal');
+        const modal = bootstrap.Modal.getOrCreateInstance(modalEl);
+        modal.hide();
+        form.reset();
+        form.classList.remove('was-validated');
+      });
+      usernameInput.addEventListener('input', () => {
+        usernameInput.classList.remove('is-invalid');
+      });
+    })();
+  </script>
 </body>
 
 </html>
