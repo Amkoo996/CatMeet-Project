@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amkoo996.github.io/CatMeet-Project/sitemap.xml
